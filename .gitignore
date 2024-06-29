@@ -3,6 +3,6 @@
 
 *.xd
 
-./README-template.md
+README-template.md
 .DS_Store
 .prettierignore
