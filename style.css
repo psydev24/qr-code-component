@@ -41,15 +41,14 @@ main {
 .qr-img {
   aspect-ratio: 1;
   width: 288px;
-  margin-bottom: 1.5rem;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .text-container {
   text-align: center;
-  padding: 1rem;
-  padding-top: 0;
+  padding-inline: 1rem;
+  margin-block: 24px;
   display: grid;
   gap: 1rem;
   --header-size: 22px;
