@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
   --container-color: hsl(0, 0%, 100%);
   --bg-color: hsl(212, 45%, 89%);
   --header-color: hsl(218, 44%, 22%);
-  --paragraph-color: hsl(220, 15%, 55%);
+  --paragraph-color: hsl(219, 15%, 55%);
 }
 
 * {
@@ -13,14 +13,59 @@
   box-sizing: border-box;
 }
 
-main {
-  height: 100vh;
-  width: 100vw;
+img {
+  width: 100%;
+}
+
+body {
   background-color: var(--bg-color);
 }
 
+main {
+  height: 100vh;
+  font-family: "Outfit", system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .qr-container {
-  margin: 0 auto;
-  max-width: 320px;
+  width: 320px;
+  padding: 1rem;
   background-color: var(--container-color);
+  border-radius: 20px;
+}
+
+.qr-img {
+  aspect-ratio: 1;
+  width: 288px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
+  display: grid;
+  gap: 1rem;
+  --header-size: 22px;
+  --body-size: 15px;
+  --header-weight: 700;
+  --body-weight: 400;
+}
+
+.text-container .header {
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+  color: var(--header-color);
+}
+
+.text-container .body-text {
+  font-weight: var(--body-weight);
+  font-size: var(--body-size);
+  letter-spacing: 0.19px;
+  color: var(--paragraph-color);
 }
